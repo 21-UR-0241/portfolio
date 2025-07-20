@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="media.css">
     <style>
 
-#contact{
+/* #contact{
   background: #f0f4f8;
   display: flex;
   justify-content: center;
@@ -50,6 +50,57 @@ footer{
 }
 footer p{
   text-align: center;
+} */
+ /* Contact Section - Desktop */
+#contact {
+  padding: 4rem 2rem;
+  text-align: center;
+    background: #f0f4f8;
+}
+
+.contact-title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.contact-subtitle {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.contact-card-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: #f5f5f5;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  flex: 1 1 300px;
+  max-width: 350px;
+}
+
+.contact-icon {
+  width: 28px;
+  height: 28px;
+}
+
+.contact-card a {
+  color: #000;
+  text-decoration: none;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  font-size: 1rem;
 }
     </style>
 </head>
@@ -271,8 +322,24 @@ footer p{
   </div>
 </section>
 
-
 <section id="contact">
+  <p class="contact-subtitle">Get in Touch</p>
+  <h1 class="contact-title">Contact Me</h1>
+
+  <div class="contact-card-container">
+    <div class="contact-card">
+      <img src="./assets/email.webp" alt="email icon" class="contact-icon">
+      <p><a href="mailto:parinasrenold026@gmail.com">parinasrenold026@gmail.com</a></p>
+    </div>
+    <div class="contact-card">
+      <img src="./assets/linkedin.webp" alt="linkedin icon" class="contact-icon">
+      <p><a href="https://www.linkedin.com/in/renold-pari%C3%B1as-4a5874289/" target="_blank">LinkedIn</a></p>
+    </div>
+  </div>
+</section>
+
+
+<!-- <section id="contact">
   <p class="section__text__p1">Get in Touch</p>
   <h1 class="title">Contact Me</h1>
   <div class="contact-info-upper-container">
@@ -285,7 +352,7 @@ footer p{
       <p><a href="https://www.linkedin.com/in/renold-pari%C3%B1as-4a5874289/">Linkedin</a></p>
     </div>
   </div>
-</section>
+</section> -->
 <footer>
   <nav>
     <div class="nav-links-container">
