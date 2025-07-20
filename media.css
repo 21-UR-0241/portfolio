@@ -25,7 +25,7 @@
   }
 
   #experience,
-  .experience-details-container {
+  .experinece-details-container {
     margin-top: 2rem;
   }
 
@@ -62,13 +62,12 @@
 @media screen and (max-width: 600px) {
   #contact,
   footer {
-    height: auto;
-    padding: 2rem 0;
+    height: 40vh;
   }
 
   #profile {
-    height: auto;
-    margin-bottom: 2rem;
+    height: 83vh;
+    margin-bottom: 0;
   }
 
   article {
@@ -85,24 +84,17 @@
     flex-wrap: wrap;
   }
 
-  /* 📬 Contact section layout */
+  /* ✅ Fixed: Added display and corrected flex-wrap */
   .contact-info-upper-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 1rem;
     margin-top: 1rem;
   }
 
   .contact-info-container {
-    text-align: center;
-    width: 100%;
-  }
-
-  .contact-info-container img {
-    width: 24px;
-    height: 24px;
-    margin-bottom: 0.5rem;
+    margin: 0;
   }
 
   .contact-info-container p,
@@ -124,21 +116,22 @@
     text-align: center;
   }
 
-  /* 👤 Profile picture responsive fix */
-   .section__pic-container {
-    width: 80vw;
-    max-width: 320px;
-    height: auto;
-    margin: 0 auto 2rem;
+  /* ✅ Fixed: Larger and better profile image */
+  .section__pic-container {
+    width: 200px;
+    height: 200px;
+    max-width: 80vw;
+    margin: 0 auto 1.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .about-pic {
+
+  .section__pic-container img {
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
-    border-radius: 50%; /* Optional: circular profile image */
+    border-radius: 50%; /* Optional: circular image */
   }
 
   .section__text_p2 {
